@@ -1,7 +1,4 @@
---- http_parser.h (原始)
-
-
-+++ http_parser.h (修改后)
+http_parser.h
 #ifndef CHAOS_PROXY_HTTP_PARSER_H
 #define CHAOS_PROXY_HTTP_PARSER_H
 
