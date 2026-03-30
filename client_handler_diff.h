@@ -1,7 +1,4 @@
---- client_handler.h (原始)
-
-
-+++ client_handler.h (修改后)
+client_handler.h
 #ifndef CHAOS_PROXY_CLIENT_HANDLER_H
 #define CHAOS_PROXY_CLIENT_HANDLER_H
 
