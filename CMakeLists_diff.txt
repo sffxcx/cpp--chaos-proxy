@@ -1,0 +1,33 @@
+--- CMakeLists.txt (原始)
+
+
++++ CMakeLists.txt (修改后)
+cmake_minimum_required(VERSION 3.10)
+project(ChaosProxy LANGUAGES CXX)
+
+# Устанавливаем стандарт C++17
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+
+# Находим потоки (threads) для std::thread
+find_package(Threads REQUIRED)
+
+# Список исходных файлов проекта
+set(SOURCES
+    main.cpp
+    server.cpp
+    client_handler.cpp
+    http_parser.cpp
+    chaos_engine.cpp
+)
+
+# Создаем исполняемый файл
+add_executable(chaos_proxy ${SOURCES})
+
+# Линкуем библиотеку потоков
+target_link_libraries(chaos_proxy PRIVATE Threads::Threads)
+
+# Для Windows可能需要 дополнительно линковать ws2_32 (сокеты)
+if(WIN32)
+    target_link_libraries(chaos_proxy PRIVATE ws2_32)
+endif()
