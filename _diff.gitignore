@@ -1,4 +1,4 @@
---- .gitignore (原始)
+--- .gitignore 
 # Prerequisites
 *.d
 
@@ -41,7 +41,7 @@
 # debug information files
 *.dwo
 
-+++ .gitignore (修改后)
++++ .gitignore 
 ```
 # Compiled files
 *.o
