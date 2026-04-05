@@ -1,4 +1,3 @@
-README.md
 # Chaos Proxy
 
 HTTP-прокси с эмуляцией сетевых сбоев.
