@@ -1,4 +1,3 @@
-client_handler.h
 #ifndef CHAOS_PROXY_CLIENT_HANDLER_H
 #define CHAOS_PROXY_CLIENT_HANDLER_H
 
